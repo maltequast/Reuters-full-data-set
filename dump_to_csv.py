@@ -12,7 +12,9 @@ def read(data_dir):
     with open(output_filename, 'w') as w:
         for filename in iglob(data_dir + '/*.pkl'):
             with open(filename, 'rb') as f:
-                data = pickle.load(f)
+                u = pickle._Unpickler(f)
+                u.encoding = 'latin1'
+                data = u.load()
                 for datum in data:
 
                     ts = datum['ts']
