@@ -5,7 +5,7 @@ Full unofficial data set of Reuters composed of 8,551,441 news titles, links and
 
 ## Using the pre-existing one
 
-```
+```bash
 git clone https://github.com/philipperemy/Reuters-full-data-set.git
 cd Reuters-full-data-set
 python3 read.py
@@ -38,7 +38,7 @@ Nothing could be easier. Just run those commands to generate pickle and CSV file
 
 I get the data from `http://www.reuters.com/resources/archive/us`.
 
-```
+```bash
 git clone https://github.com/philipperemy/Reuters-full-data-set.git
 cd Reuters-full-data-set
 pip3 install beautifulsoup4 requests
